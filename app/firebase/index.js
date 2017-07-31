@@ -6,7 +6,7 @@ try {
       authDomain: "todo-app-b0468.firebaseapp.com",
       databaseURL: "https://todo-app-b0468.firebaseio.com",
       projectId: "todo-app-b0468",
-      storageBucket: "gs://todo-app-b0468.appspot.com",
+      storageBucket: "",
       messagingSenderId: "773410644700"
     };
 
