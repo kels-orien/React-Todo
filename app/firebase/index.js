@@ -2,18 +2,17 @@ import firebase from 'firebase';
 
 try {
   var config = {
-      apiKey: "AIzaSyDRfIpzjR8Qqr4ICdOQB7MdL4lpIQb0qCc",
-      authDomain: "todo-app-b0468.firebaseapp.com",
-      databaseURL: "https://todo-app-b0468.firebaseio.com",
-      projectId: "todo-app-b0468",
-      storageBucket: "",
-      messagingSenderId: "773410644700"
-    };
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    storageBucket: process.env.STORAGE_BUCKET,
+  };
 
   firebase.initializeApp(config);
 } catch (e) {
 
 }
 
+export var githubProvider = new firebase.auth.GithubAuthProvider();
 export var firebaseRef = firebase.database().ref();
 export default firebase;
